@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="https://kit.fontawesome.com/86ee744806.js"></script>
+  </head>
+</head>
+<body>
+    <!-- 自己紹介コーナー -->
+    <div class="self-introduction">
+        <div class="container">
+            <div class="my-name">
+                <h1>NINOMIYA HIKARU</h1>
+                
+            </div>
+            <div class="birthday-countdown">
+                <!-- Javascriptの部分-->
+                <script type="text/javascript" language="javascript">// <![CDATA[
+　　　　　　　　　// 今日の日付を取得
+                var today = new Date();
+                // 開催日を設定
+                // ※ 月は0～11までで指定
+                var targetDay = new Date(2020,4,30);
+                // 1日のマイクロ秒で除算をすると
+                // 開催日までの日数が算出できる
+                remainDay = Math.floor((targetDay - today) / (24*60*60*1000));
+                // 開催前日の場合は残り0日になってしまうのを防止
+                remainDay++;
+                 if (remainDay > 0) {
+                  document.write("21歳の誕生日まで残り"+remainDay+"日");
+                }
+                else if (remainDay < -1) {
+                 document.write("21歳になりました！");
+                }
+                else {
+                 document.write("今日は誕生日です！");
+                }
+                // ]]></script>
+            </div>
+        </div>
+    </div>
+    <div class="sns">
+        <div class="container">
+            <h2>Link</h2>
+            <div class="btn-wrapper">
+                <a href="https://twitter.com/LdyYNUkKIRk6xdN" class="btn twitter">
+                    <i class="fab fa-twitter"></i>twitter</a>
+                <a href="https://qiita.com/ninomiya0530" class="btn qiita">
+                    <i class="fab fa-quora"></i>Qiita
+                </a>
+                <a href="https://github.com/ninomiya-miraidenshi" class="btn github">
+                    <i class="fab fa-github"></i>Github
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="my-favorite">
+        <div class="container">
+            <h2>MY FAVORITE FOOD</h2>
+            <div class="my-food">
+                <img src="8d402a550a63a12f3f541d5b1726873d_s.jpg" class="food">
+                <div class="food-text">
+                    <h3>餃子</h3>
+                    <p>もちもちの皮、肉汁あふれる種、その二つが組み合わさりめちゃくちゃビールにあう！お気に入りは王将の餃子で、味の素の冷凍餃子は最近飽きつつあります。</p>
+                </div>
+            </div>
+            <div class="my-food">
+                    <img src="ce1611f777ceeaf4fd6a9552f7ff65e1_s.jpg" class="food">
+                    <div class="food-text">
+                        <h3>ラーメン</h3>
+                        <p>体に悪いとわかっていてもついつい食べてしまうラーメン。間違いなく家の近くに四軒もあるのが問題だ。いつもこってりを食べてしまいます。</p>
+                    </div>
+                </div>
+                <div class="my-food">
+                        <img src="560f4a21c51e89a6874483d73eb0d895_s.jpg" class="food">
+                        <div class="food-text">
+                            <h3>焼き鳥</h3>
+                            <p>居酒屋にあったら頼んでしまうもの一位。まじで酒に合う。特にお気に入りは砂肝です。</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-form">
+            <h2>※お問い合わせはこちらまで</h2>
+            <p>お名前</p>
+            <input type="text">
+            <p>メールアドレス</p>
+            <input type="text">
+            <p>お問い合わせ内容</p>
+            <textarea></textarea>
+            <p></p>
+            <input type="submit" class="submit" value="送信">
+
+        </div>
+    </div>
+</body>
+</html>
