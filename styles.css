@@ -1,24 +1,43 @@
+/*全体の設定
+-------------------------------------------------------------------*/
+body {
+    margin: 0px;
+    padding: 0px;
+    color: black; /*文字色*/
+    font-family: "HG正楷書体-PRO";/*書体*/
+    font-size: 16px; /*文字サイズ*/
+    line-height:2; /*行間*/
+    background-color: white;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
 .container {
-    width:1000px;
+    width:600px;
     margin:0 auto;
     
 }
 /*自己紹介ブロック*/
 .self-introduction {
-    background-color:blueviolet;
-    color:white;
     text-align: center;
     padding:30px;
 }
 .self-introduction h1 {
-    font-size:40px;
-    color:white;
     letter-spacing:3px;
+    font-size:30px;
 }
 /* Linkブロック*/
 .container h2 {
-    font-size:30px;
-    font-weight:normal;
+    clear: both;
+	margin-bottom: 20px;
+	color: #fff;		/*文字色*/
+	padding: 10px 20px;	/*上下、左右への余白*/
+	background: #645932;	/*背景色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 .btn {
     padding:10px 40px;
@@ -26,6 +45,9 @@
     display:inline-block;
     margin-right:10px;
 
+}
+.btn-wrapper {
+    text-aline:center;
 }
 .twitter {
     background-color:rgba(25, 118, 161);
@@ -37,8 +59,8 @@
     background-color:rgb(15, 11, 43);
 }
 .sns {
-    text-align: center;
-    background-color:rgb(197, 102, 102);
+
+    background-color:white;
     padding:30px 0 30px 0;
 }
 .fab {
@@ -46,9 +68,8 @@
 }
 /*好きなもののコーナー*/
 .my-favorite {
-    background-color:greenyellow;
+    background-color:white;
     padding:30px 0;
-    text-align: center;
     height:800px;
 }
 .food {
@@ -68,7 +89,7 @@
 }
 /* お問い合わせフォーム*/
 .contact-form {
-    width:1000px;
+    width:600px;
     padding-left:20px;
 }
 .submit {
@@ -79,4 +100,43 @@
 }
 .contact-form textarea {
     width:166px;
+}
+/*カレンダーの部分*/
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+td:first-child {
+    color: red;
+}
+
+td:last-child {
+    color: royalblue;
+}
+
+td.is-disabled {
+    color: #ccc;
+}
+.calender {
+    padding-top:10px
 }
