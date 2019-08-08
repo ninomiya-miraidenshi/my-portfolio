@@ -140,3 +140,9 @@ td.is-disabled {
 .calender {
     padding-top:10px
 }
+
+/* お問い合わせフォーム*/
+button[type="submit"] {
+    padding: 1em 2em;
+    color:black;
+}

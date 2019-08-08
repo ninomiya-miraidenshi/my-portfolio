@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>お問い合わせ内容</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
